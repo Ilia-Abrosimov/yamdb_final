@@ -57,7 +57,6 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }} # если ваш ssh-ключ защищен фразой-паролем
           script: |
             sudo docker pull irabrosimov/yamdb_final
-#            sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 8000:8000 irabrosimov/yamdb_final
   send_message:
     runs-on: ubuntu-latest
