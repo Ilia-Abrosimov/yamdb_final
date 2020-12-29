@@ -12,7 +12,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: irabrosimov/yamdb_final:latest #В курсе насчет того что нельзя указывать версию latest. Но суть задания в том чтобы происходил автоматический деплой на сервер после выполнения push после внесения в изменений в код проекта. См. личные сообщения в Slack
+    image: irabrosimov/yamdb_final:latest
     restart: always
     volumes:
       - static_volume:/code/static/

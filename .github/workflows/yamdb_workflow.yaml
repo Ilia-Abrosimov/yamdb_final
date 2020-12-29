@@ -60,6 +60,7 @@ jobs:
             sudo docker pull irabrosimov/yamdb_final
             cd /home/${{ secrets.USER }}/app
             docker-compose stop
+            docker rm web
             docker-compose up -d
   send_message:
     runs-on: ubuntu-latest
