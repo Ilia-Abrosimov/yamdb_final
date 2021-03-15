@@ -44,10 +44,4 @@ yamdb_final
     $ docker-compose exec web python manage.py collectstatic --noinput
     
 Документация по API доступна по адресу\
-http://84.201.177.1:1337/redoc/
-
-Доступ к админке\
-http://84.201.177.1:1337/admin/
-
-Перечь произведений\
-http://84.201.177.1:1337/api/v1/titles/
+http://<IP адрес>/redoc/
